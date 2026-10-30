@@ -1,0 +1,9 @@
+name = "keypad-relay"
+main = "src/index.js"
+compatibility_date = "2025-01-01"
+
+# 先执行：npx wrangler kv namespace create KEYPAD
+# 把输出的 id 填到下面（这是唯一需要改的地方）
+[[kv_namespaces]]
+binding = "KEYPAD"
+id = "REPLACE_WITH_YOUR_KV_NAMESPACE_ID"
